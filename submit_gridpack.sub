@@ -1,0 +1,13 @@
+universe              = vanilla
+executable            = gridpack_generation.sh
+arguments             = $(myargs)
+output                = output/job.$(ClusterId).$(ProcId).out
+error                 = error/job.$(ClusterId).$(ProcId).err
+log                   = log/job.$(ClusterId).log
+Notify_user           = calderon@cern.ch
+RequestCpus           = 1
++JobFlavour           = "workday"
+should_transfer_files = YES                                                                                                                
+when_to_transfer_output = ON_EXIT                                                                                                         
+queue myargs from file_args.txt
+
