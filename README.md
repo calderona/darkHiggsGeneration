@@ -34,6 +34,7 @@ running on CMSSW_9_3_16
    
     ./gridpack_generation.sh DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_160_TuneCP5_13TeV /cards/	production/2017/13TeV/DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_160_TuneCP5_13TeV
 
+## Sent jobs to CONDOR
 
 
 ## Running in CMS CONNECT 
