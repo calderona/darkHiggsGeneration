@@ -36,9 +36,9 @@ running on CMSSW_9_3_16
 
 ## Sent jobs to CONDOR
 
-voms-proxy-init -voms cms -rfc --valid 168:0
+    voms-proxy-init -voms cms -rfc --valid 168:0
 
-./submit_gridpack_condor.sh DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_195_TuneCP5_13TeV cards/production/2017/13TeV/DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_195_TuneCP5_13TeV
+    ./submit_gridpack_condor.sh DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_195_TuneCP5_13TeV cards/production/2017/13TeV    /DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_195_TuneCP5_13TeV
 
 
 ## Running in CMS CONNECT 
