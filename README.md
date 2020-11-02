@@ -1,5 +1,5 @@
 
-##How to prepare the gridpacks
+## How to prepare the gridpacks
 
 https://twiki.cern.ch/twiki/bin/view/CMS/QuickGuideMadGraph5aMCatNLO
 
