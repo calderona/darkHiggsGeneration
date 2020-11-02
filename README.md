@@ -36,3 +36,12 @@ running on CMSSW_9_3_16
 
 
 
+## Running in CMS CONNECT 
+
+   Longin into: 
+
+    ssh -Y calderon@@login-el7.uscms.org
+
+    cd /local-scratch/calderon/
+
+    nohup ./submit_cmsconnect_gridpack_generation.sh  DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_200_mx_100_mZp_1200_TuneCP5_13TeV cards/prodution/2017/13TeV/DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_200_mx_100_mZp_1200_TuneCP5_13TeV  > mysubmit10.debug 2>&1 &
