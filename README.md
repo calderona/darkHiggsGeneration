@@ -3,9 +3,8 @@
 
 https://twiki.cern.ch/twiki/bin/view/CMS/QuickGuideMadGraph5aMCatNLO
 
-CAVEAT!! normal lxplus machines runs on slc7_amd64_gcc820 architecture. You need to use lxplus6.cern.ch machines 
-running on CMSSW_9_3_16
-
+CAVEAT!! normal lxplus machines runs on slc7_amd64_gcc820 architecture.
+ 
    On the cards just change the pdf to:
    
     lhapdf = pdlabel ! PDF set
@@ -15,8 +14,6 @@ running on CMSSW_9_3_16
    On a lxplus machine (not in a release area), you can do the following:
     
     git clone git@github.com:cms-sw/genproductions.git genproductions 	
-    If you need to use mg 2.6.x then do the following:
-    git clone git@github.com:cms-sw/genproductions.git genproductions -b mg26x) 
     
     cd genproductions/bin/MadGraph5_aMCatNLO/
 
@@ -28,11 +25,11 @@ running on CMSSW_9_3_16
  
    For creating the cards with all the mass points: 
     
-    python createGridpacks_DarkHiggs_WW.py -i DarkHiggs_WW/ -n DarkHiggs
+    python createGridpacks_DarkHiggs_WW.py -i cards/production/2017/13TeV/DarkHiggs_WW2l2nu/ -n DarkHiggs_WW2l2nu
 
    For running the gridpacks we should do: 
    
-    ./gridpack_generation.sh DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_160_TuneCP5_13TeV /cards/	production/2017/13TeV/DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_100_mZp_160_TuneCP5_13TeV
+   ./gridpack_generation.sh DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_300_mZp_2000_TuneCP5_13TeV cards/production/2017/13TeV/DarkHiggs_MonoHs_HsToWWTo2l2nu_mhs_160_mx_300_mZp_2000_TuneCP5_13TeV/
 
 ## Sent jobs to CONDOR
 

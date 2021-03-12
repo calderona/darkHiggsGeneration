@@ -41,8 +41,8 @@ print "The gen process name is:", GENPROCESSNAME
 
 # Create cards and run gridpacks
 
-massDM=[100]#[100,150,200]
-massZp=[195]#[195,200,295,300,400]#,500,800,1000,1200,1500]
+massDM=[300]#[100,150,200]
+massZp=[2000]#[195,200,295,300,400]#,500,800,1000,1200,1500]
 massHs=[160]#[160,180,200]
 
 
@@ -109,7 +109,7 @@ for mhs in massHs:
             #os.system("./gridpack_generation.sh %s %s/%s > /dev/null &" % (CURRENTPROCESS,card_dir,CURRENTPROCESS))
             #print ("./gridpack_generation.sh %s %s/%s" % (CURRENTPROCESS,card_dir,CURRENTPROCESS))
             #os.system("./submit_cmsconnect_gridpack_generation_singlejob.sh %s %s/%s" % (CURRENTPROCESS,card_dir,CURRENTPROCESS)) 
-            os.system("./gridpack_generation.sh %s %s/%s" % (CURRENTPROCESS,card_dir,CURRENTPROCESS))
+           # os.system("./gridpack_generation.sh %s %s/%s" % (CURRENTPROCESS,card_dir,CURRENTPROCESS))
 #os.system("./submit_gridpack_generation.sh 15000 50000 1nh %s %s/%s 1nh" % (CURRENTPROCESS,card_dir,CURRENTPROCESS))
             #os.system("mv *tarball.tar.xz /eos/user/c/calderon/LatinoTrees/darkHiggs/gridpacks/.")
             #os.system("rm -rf %s" % (CURRENTPROCESS))
